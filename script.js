@@ -1,7 +1,6 @@
 
 /* Changing background in morning and evening */
 
-
 let temperature1= document.querySelector('.current-temperature');
 let hour = new Date().getHours();
 
@@ -13,10 +12,6 @@ if(hour >= 19 || hour <= 7) {
     document.body.className += 'morning';
     temperature1.classList.add('morning');
 }
-
-
-
-
 
 /* On loading the page, the event is trigerred */
 
@@ -50,12 +45,7 @@ window.addEventListener('load',()=>{
             console.log(longitude);
             const url=  `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=da27a811c1467d7059b20a5502c1f10e&units=metric`;
             
-            /* const url1= `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=da27a811c1467d7059b20a5502c1f10e&units=metric`;
- */
             /* Fetching data from Openweathermap.com */
-
-           
-
 
             fetch(url)
             .then(res=>{
@@ -99,9 +89,7 @@ window.addEventListener('load',()=>{
             })/* catching the error */
             .catch(err=>{
                 console.log(err);
-            })
-
-            
+            })     
 
         })
     }
