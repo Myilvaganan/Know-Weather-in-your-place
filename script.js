@@ -44,7 +44,7 @@ window.addEventListener('load',()=>{
                 
                 /* Setting the icon respective to the temperature using icon id */
 
-                image.setAttribute('src',`http://openweathermap.org/img/wn/${icon}@4x.png`);
+                image.setAttribute('src',`https://openweathermap.org/img/wn/${icon}@4x.png`);
 
                 timeZone.textContent=data.name;
                 temperature.textContent=Math.floor(temp);
