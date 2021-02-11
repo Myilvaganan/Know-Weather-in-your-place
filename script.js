@@ -31,6 +31,7 @@ window.addEventListener('load',()=>{
     let temperature= document.querySelector('.degree');
     let temperature1=document.querySelector('.temperature');
     let degree= document.querySelector('.unit');
+    let degree1= document.querySelector('.unit-1');
     let weatherState= document.querySelector('.weather-des');
     let image= document.querySelector('.image');
     let feels_temp= document.querySelector('.feels_temp');
@@ -83,11 +84,13 @@ window.addEventListener('load',()=>{
                 temperature1.addEventListener('click',()=>{
                     if(degree.textContent=== 'C'){
                         degree.textContent= 'F';
+                        degree1.textContent= 'F';
                         temperature.textContent= farenheit;
                         feels_temp.textContent= farenheit_feels;
                         console.log(farenheit);
                     }else{
                         degree.textContent='C';
+                        degree1.textContent= 'C';
                         temperature.textContent= Math.floor(temp);
                         feels_temp.textContent= Math.floor(feels_like);
                         console.log(Math.floor(temp));
