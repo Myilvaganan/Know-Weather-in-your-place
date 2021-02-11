@@ -105,3 +105,16 @@ body.morning {
 .feels_temp{
     margin:10px;
 }
+
+
+
+
+/* Adding media query */
+
+@media only screen and (max-width: 600px) {
+    
+    .location h1{
+        font-size: 3rem;
+    }
+
+}
